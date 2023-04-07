@@ -1,5 +1,5 @@
 [book]
-authors = []
+authors = ["Native Planet"]
 language = "en"
 multilingual = false
 src = "src"
