@@ -20,8 +20,10 @@ RUN mdbook build
 RUN mkdir /gsmanual
 RUN mv /app/book/* /gsmanual
 
+# Minimal static server
 FROM abhin4v/hastatic:latest
-# Copy miniserv over to new alpine image
+
+# Copy manual over to new server image
 WORKDIR /opt/gsmanual
 COPY --from=builder /gsmanual /opt/gsmanual
 
