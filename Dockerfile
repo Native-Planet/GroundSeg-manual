@@ -1,4 +1,4 @@
-FROM rust:1.68-slim
+FROM rust:1.68-slim AS builder
 
 # Install additional dependencies
 RUN apt-get update && apt-get install -y \
@@ -17,12 +17,16 @@ COPY . /app
 
 # Build the mdBook project
 RUN mdbook build
+RUN mkdir /gsmanual
+RUN mv /app/book/* /gsmanual
 
-# Install a simple HTTP server to serve the book
-RUN cargo install miniserve --version "0.23.0"
+FROM abhin4v/hastatic:latest
+# Copy miniserv over to new alpine image
+WORKDIR /opt/gsmanual
+COPY --from=builder /gsmanual /opt/gsmanual
 
 # Expose the server port
 EXPOSE 31337
-
-# Serve the built book with miniserve
-CMD ["miniserve", "--index", "index.html", "-p", "31337", "./book"]
+ENV PORT=31337
+ENV IDX_FILE=index.html
+CMD ["/usr/bin/hastatic"]
