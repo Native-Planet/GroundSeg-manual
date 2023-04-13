@@ -37,6 +37,8 @@ pipeline {
                         if [ "${channel}" = "latest" ]; then
                             curl -X PUT -H "X-Api-Key: ${versionauth}" \
                                 https://version.groundseg.app/modify/groundseg/canary/manual/amd64_sha256/${amd_hash}
+                            curl -X PUT -H "X-Api-Key: ${versionauth}" \
+                                https://version.groundseg.app/modify/groundseg/canary/manual/arm64_sha256/${arm_hash}
                         fi
                     ''',
                     returnStdout: true
