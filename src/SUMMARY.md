@@ -1,4 +1,4 @@
 # Summary
 
 # User Manual
-- [Developer Mode](./user/devmode.md)
+- [Developer Mode](./guide/devmode.md)
