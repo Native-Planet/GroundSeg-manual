@@ -24,5 +24,5 @@ docker build -t nativeplanet/documentation:latest .
 ```
 ###### 2. Start container
 ```
-docker run -d --name np-docs --rm -p 31337:31337 nativeplanet/documentation:latest
+docker run -d --name np-docs --rm -p 31337:31337 nativeplanet/groundseg-manual:latest
 ```
