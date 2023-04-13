@@ -20,15 +20,14 @@ RUN mdbook build
 RUN mkdir /gsmanual
 RUN mv /app/book/* /gsmanual
 
-# Minimal static server
-FROM abhin4v/hastatic:latest
+# Tiny busybox image :)
+FROM busybox:1.35
 
-# Copy manual over to new server image
-WORKDIR /opt/gsmanual
-COPY --from=builder /gsmanual /opt/gsmanual
+# Create a non-root user to own the files and run our server
+RUN adduser -D static
+USER static
+WORKDIR /home/static
+COPY --from=builder /gsmanual /home/static
 
-# Expose the server port
-EXPOSE 31337
-ENV PORT=31337
-ENV IDX_FILE=index.html
-CMD ["/usr/bin/hastatic"]
+# Run BusyBox httpd
+CMD ["busybox", "httpd", "-f", "-v", "-p", "31337"]
