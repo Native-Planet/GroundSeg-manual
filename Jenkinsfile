@@ -25,8 +25,7 @@ pipeline {
                         docker login --username=nativeplanet --password=$dockerpw
                         docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
                         docker buildx create --use --name xbuilder --node xbuilder0
-                        docker buildx build --build-arg --push --tag nativeplanet/groundseg-manual:${channel} --platform linux/amd64,linux/arm64 .
-                        docker push nativeplanet/groundseg-manual:${channel}
+                        docker buildx build --push --tag nativeplanet/groundseg-manual:${channel} --platform linux/amd64,linux/arm64 .
                         amd_hash=`curl -s "https://hub.docker.com/v2/repositories/nativeplanet/groundseg-manual/tags/${channel}/?page_size=100" \
                             |jq -r '.images[]|select(.architecture=="amd64").digest'|sed 's/sha256://g'`
                         arm_hash=`curl -s "https://hub.docker.com/v2/repositories/nativeplanet/groundseg-manual/tags/${channel}/?page_size=100" \
