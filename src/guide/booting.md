@@ -16,8 +16,11 @@ To boot a brand new ship, you need a [keyfile](https://developers.urbit.org/refe
 To get your keyfile:
 - Go to [bridge.urbit.org](https://bridge.urbit.org) and log in with your crypto wallet or master ticket.
 - Click the 'OS' menu option:
+
 ![OS in Bridge](/static/bridge-os.png)
+
 - At the top of the OS menu, click 'Download keyfile':
+
 ![keyfile in Bridge](/static/bridge-keyfile.png)
 
 Next, in GroundSeg, click 'Boot a new Urbit ID':
@@ -47,13 +50,18 @@ If you've already booted a ship and want to migrate it to GroundSeg, the process
 - On the device that was previously running your ship, **turn the ship off** -- sounds obvious, but it's worth double checking! Your ship may be damaged if you don't do this.
 - Next, compress the pier directory. Navigate to the directory containing your pier -- e.g., if you type `ls`, you should be able to see the pier directory. Rename the pier directory to be the same as your planet (for example, `mv myplanet sampel-palnet`).
 - If you're using Linux, the compress command might look like...
-````
+
+```
 tar cvzf sampel-palnet.tar.gz sampel-palnet/
 ```
+
 - In GroundSeg click the 'Boot an existing Urbit ID' button:
+
 ![](/static/boot-existing-id.png)
+
 - Proceed through the warning after double checking that your ship is shut off.
 - Upload the archive you created here:
+
 ![](/static/pier-upload.png)
 
 Note that the upload form supports `.tgz`, `.tar`, `.tar.gz`, and `.zip` files.
