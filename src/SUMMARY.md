@@ -9,3 +9,4 @@
 - [StarTram settings](./guide/startram.md)
 - [System Settings menu](./guide/settings-menu.md)
 - [Bug Reports](./guide/bug-reports.md)
+- [Release channels](./guide/release-channels.md)
