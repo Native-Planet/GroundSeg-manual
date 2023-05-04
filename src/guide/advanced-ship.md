@@ -17,7 +17,7 @@ This document describes the features and options present in a ship's 'Advanced' 
     - **Export bucket** allows you to export an archive of the content that has been uploaded to your Minio S3 bucket
 4. Pack & Meld
     - **Packing and melding** are used to keep a ship's loom (memory arena) as compact as possible. This allows you to use less memory when you are running it. GroundSeg allows you to automatically schedule packing and melding -- once a week should be fine for most people.
-    - **Urth Pack and Meld** will turn the ship off before using pack and meld
+    - **Urth Pack and Meld** will turn the ship off before using pack and meld ('offline').
 5. Connectivity
     - This toggle will allow you to set your ship to local or remote mode (if available)
     - Local mode will serve the ship on your local network, but will not be accessible from the internet
@@ -26,7 +26,7 @@ This document describes the features and options present in a ship's 'Advanced' 
 6. Loom Size
     - Your loom size is the maximum amount of memory your Urbit can use
     - Urbit use a default 2GB loom -- you can increase it if necessary, but probably shouldn't unless you have a specific reason
-    - Once a ship has been booted with a particular loom size, it cannot be booted with a smaller loom in the future
+    - If your ship's loom exceeds the selected loom size, it will not boot successfully.
 7. Admin Actions
     - **Enable Developer Mode** will boot your ship in its container attached to a `tmux` pane, which will allow you to attach to the ship's dojo via a command line rather than the web dojo (see [the Dev Mode guide](/guide/devmode.html)). As a tradeoff, your ship's logs will not be available to GroundSeg.
     - **Export Urbit Pier** will turn your ship off and allow you to download an archive of its data so you can move it somewhere else
