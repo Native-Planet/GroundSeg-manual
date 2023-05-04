@@ -2,7 +2,7 @@
 
 **[StarTram](https://nativeplanet.io/startram)** is Native Planet's custom networking stack that lets you access GroundSeg from the public internet, even if it's hosted on your home network, with no technical configuration on your part. This document describes how to use the StarTram menu.
 
-![](/static/startram.png)
+![](/static/startram-settings.png)
 
 If you have already registered your device on StarTram, your menu will look similar to the above screenshot. Your current subscription information is described in the boxes:
 
