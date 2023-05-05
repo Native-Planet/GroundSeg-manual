@@ -24,7 +24,7 @@ Welcome to GroundSeg! You will be asked to set a password for your device and be
 
 GroundSeg does not support comets. If you don’t already have a planet, reach out to us.
 
-- Go to [bridge.urbit.org](https://bridge.urbit.org/) and claim your planet with the planet code that came with your device.
+- Go to [bridge.urbit.org](https://bridge.urbit.org/) and log in with your master ticket, or use your planet code if you have not already claimed it.
 
 - Download your passport and keyfile from Bridge.
 
