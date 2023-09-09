@@ -1,6 +1,7 @@
 # Summary
 
 # User Manual
+- [About](./guide/about.md)
 - [Device setup](./guide/device-setup.md)
 - [Booting a ship](./guide/booting.md)
 - [Basic ship menu](./guide/ship-controls.md)
