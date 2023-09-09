@@ -1,6 +1,6 @@
 # About GroundSeg
 
-This collection of documents describes the operation of GroundSeg, an [open source](https://github.com/Native-Planet/GroundSeg) application for managing Urbit instances (`piers`) and related services.
+This collection of documents describes the operation of GroundSeg, an [open source](https://github.com/Native-Planet/GroundSeg) application for managing Urbit instances ("piers") and related services.
 
 GroundSeg is developed by [Native Planet](https://nativeplanet.io) for our line of dedicated home Urbit servers, but GroundSeg can run on nearly any old PC you have lying around, including Raspberry Pi and very old computers. That said, we recommend using a dedicated device for GroundSeg, due to its elevated permissions. 
 
