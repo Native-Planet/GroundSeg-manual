@@ -56,7 +56,7 @@ StarTram is Native Planet’s remote access service, that allows you to access y
 
 - Click on the 'Profile' menu in the upper right hand corner. 
 
-![settings items](/static/gs2/settings-items.jpg)
+![settings items](/static/gs2/settings-items.png)
 
 - Enter Your registration code, select a region, submit, and wait for it to complete.
 
