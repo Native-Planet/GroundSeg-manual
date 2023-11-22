@@ -25,7 +25,7 @@ To get your keyfile:
 
 Next, in GroundSeg, click 'Boot a new Urbit ID':
 
-![Boot a new ID image](/static/boot-new-id.png)
+![Boot a new ID image](/static/gs2/new-ship-button.png)
 
 In the top text field, enter the `@p` (name) of your ship -- like `~sampel-palnet` or `~wanzod` (the `~` is optional). 
 
@@ -55,14 +55,14 @@ If you've already booted a ship and want to migrate it to GroundSeg, the process
 tar cvzf sampel-palnet.tar.gz sampel-palnet/
 ```
 
-- In GroundSeg click the 'Boot an existing Urbit ID' button:
+- In GroundSeg click the 'new ship' `+` icon in your dashboard, then the 'Import Pier' button:
 
-![](/static/boot-existing-id.png)
+![](/static/gs2/boot-screen.png)
 
 - Proceed through the warning after double checking that your ship is shut off.
 - Upload the archive you created here:
 
-![](/static/pier-upload.png)
+![](/static/gs2/import-pier.png)
 
 Note that the upload form supports `.tgz`, `.tar`, `.tar.gz`, and `.zip` files.
 

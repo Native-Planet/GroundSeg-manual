@@ -54,15 +54,13 @@ StarTram is Native Planet’s remote access service, that allows you to access y
 
 #### Activating StarTram in GroundSeg
 
-- Click on the satellite dish icon in the upper left hand corner. 
+- Click on the 'Profile' menu in the upper right hand corner. 
 
-![StarTram dish icon](/static/startram-icon.jpg)
+![settings items](/static/gs2/settings-items.jpg)
 
-- Enter Your registration code and wait for an affirmative response.
+- Enter Your registration code, select a region, submit, and wait for it to complete.
 
-- Select your ship's menu in GroundSeg. The ‘Local’/’Remote’ toggle will disable and enable remote access to your ship via StarTram. When ‘Remote’ is enabled, you can access your ship from anywhere using the address in the ‘Ship access URL’ bar.
-
-![GroundSeg access toggle](/static/groundseg-access.jpg)
+- Select your ship's menu in GroundSeg. The 'Remote access' toggle will disable and enable remote access to your ship via StarTram. When ‘Remote’ is enabled, you can access your ship from anywhere using the address in the 'URL' button.
 
 #### Configuring MinIO S3 (Only available with StarTram)
 

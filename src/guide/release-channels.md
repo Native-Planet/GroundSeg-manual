@@ -28,12 +28,8 @@ sudo systemctl restart groundseg
 
 ...and Groundseg will restart itself and download the appropriate packages -- this may take a minute or two.
 
-You can verify the version you're running in the system settings menu:
-
-![Release channel image](/static/channel.png)
-
 You can switch back to latest any time -- however, you may run into issues if you boot a ship with a newer version of Vere (for instance, a test version on the `canary` channel) and try to go backwards by switching to latest. This is uncommon but worth bearing in mind.
 
 You can see which version of Vere you're running in your ship's 'Advanced' menu:
 
-![Vere version in Groundseg](/static/vere-version.png)
+![Vere version in Groundseg](/static/gs2/vere-version.png)
