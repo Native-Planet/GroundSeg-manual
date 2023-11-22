@@ -23,7 +23,7 @@ To get your keyfile:
 
 ![keyfile in Bridge](/static/bridge-keyfile.png)
 
-Next, in GroundSeg, click 'Boot a new Urbit ID':
+Next, in GroundSeg, click the new ship `+` icon:
 
 ![Boot a new ID image](/static/gs2/new-ship-button.png)
 
