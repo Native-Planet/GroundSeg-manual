@@ -1,6 +1,6 @@
 # About GroundSeg
 
-![Cover image](/static/gs-cover.png)
+![Cover image](/static/gs2/home-page.png)
 
 This collection of documents describes the operation of GroundSeg, an [open source](https://github.com/Native-Planet/GroundSeg) application for managing Urbit instances ("piers") and related services.
 
@@ -14,6 +14,6 @@ GroundSeg allows you to run multiple ships -- there's no hard limit, only the li
 
 GroundSeg also includes automatic self-hosted S3, allowing you to host images and media for your ships without any manual configuration -- you just click a button. If you've configured S3 before, this probably sounds much simpler than what you did before! Since our S3 service, MinIO, is hosted entirely on your device, your data remains on your own computer.
 
-GroundSeg and StarTram contain many other features and conveniences. We encourage you to try it out and let us know what you think! We're always hanging around at `~raldeg/native-planet`.
+GroundSeg and StarTram contain many other features and conveniences. We encourage you to try it out and let us know what you think! We're always hanging around at `~nattyv/native-planet`.
 
 See you on the network!

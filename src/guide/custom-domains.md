@@ -18,16 +18,12 @@ CNAMEs have to use a subdomain, so enter the subdomain as your entry’s name �
 
 ## 2. Custom domains for a ship
 
-In GroundSeg, open the settings for the ship you want to use from the main menu. Under ‘advanced’, enter your custom domain in the text bar and submit.
+In GroundSeg, open the settings for the ship you want to use from the main menu. Select your ship's card from the dashboard, enter your custom domain in the 'Custom Urbit Domain' text bar and submit.
 
-![Ship domain example](/static/domains-2.png)
+![Ship domain example](/static/gs2/custom-domain.png)
 
 ## 3. Custom domains for Minio
 
-Minio's custom domain settings are located in the same 'Advanced' menu:
-
-![MinIO domain example](/static/domains-3.png)
+Minio's custom domain field is located in the same ship card menu, directly underneath the ship's custom domain field.
 
 If you get an error, try waiting a few minutes and trying again — DNS can be a little slow to update sometimes. Once you successfully submit it, your custom domain should be accessible immediately.
-
-![Advanced options menu](/static/domains-4.png)

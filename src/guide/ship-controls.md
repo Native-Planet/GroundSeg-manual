@@ -1,23 +1,34 @@
 # Ship controls
 
-This document describes the settings present in the basic ship controls menu.
+This document describes the settings present in the ship controls menu.
 
-![](/static/basic-menu.png)
+![](/static/gs2/ship-settings.png)
 
-1. Access Key
-    - Your access key is your ship's `+code`, the password that allows you to access your ship's web interface
-2. Ship Access URL
-    - You can copy your ship's web URL from this menu, or open it in a new tab using the arrow icon
-    - Your ship's access URL will change if you switch it between Local and Remote mode (see below)
-3. MinIO Local Storage Console
-    - MinIO is what GroundSeg uses to automatically host and configure S3 storage for your Urbit ship
-    - Minio is a self-contained application which can be managed via its web console, which this item will allow you to open in your browser
-    - Note that it is not necessary to directly manage Minio -- GroundSeg will automatically configure it, and automatically link it to your ship if you click the 'Link' button
-4. Connectivity
-    - The connectivity toggle allows you to switch your ship between local and remote mode
-    - In local mode, a ship is only accessible on your local network (e.g. at `nativeplanet.local:8090` or similar)
-    - In remote mode, your ship can be accessed via the public internet. Note that this requires your GroundSeg device be registered with [StarTram](https://nativeplanet.io/startram) or a self-hosted [Anchor](https://github.com/Native-Planet/Anchor) service.
-5. Logs
-    - Clicking 'Logs' will show you the logs printed by your ship, which may be useful for debugging. Note that it is not an interactive dojo (see [dev mode](/guide/devmode.html)).
-6. Power toggle
-    - At the top right corner of the basic settings menu box, you can see a toggle button that is used to turn your ship on and off.
+1. Title
+    - This shows the `@p` of your ship, and the version of Vere your ship is using.
+2. System resources
+    - This shows the amount of memory and disk usage your ship's container is currently reporting (refreshes every 10 seconds)
+3. Power
+    - Use the checkbox to save your ship's power status (e.g. restart a running ship on power reset). Use the toggle to turn your ship on and off.
+4. Urbit Information
+    - The 'Access Key' button will copy your `+code` login password to your clipboard when you click it.  The 'URL' button will open your ship's URL in your browser -- either the `.local` URL if your ship isn't toggled to remote, or the remote StarTram/Anchor URL if it is.
+5. Set Custom Urbit Domain
+    - The custom Urbit domain field allows you to set a custom URL for your remote-toggled ship. See the [custom domain guide](/guide/custom-domains.html) for instructions on configuring a custom domain.
+6. Minio
+    - Copy Minio Password will copy your console password to allow you to login to the Minio console
+    - Settings will take you to the Minio console URL (remote-only)
+    - Connect to Urbit auto-configures S3 on your ship using the Minio settings
+    - See the [custom domain guide](/guide/custom-domains.html) for instructions on configuring a custom domain.
+7. Pack Pier
+    - 'Pack & Meld' will immediately shut down your ship and perform a pack and meld, 'defragmenting' the memory arena.
+    - 'Pack' will only perform an online pack
+    - The calendar icon allows you to schedule recurring packs/melds
+8. Remote Access
+    - Switch the toggle to connect or disconnect your ship with StarTram and enable/disable the remote access URL
+9. Developer Mode
+    - This option allows you to SSH into the container your ship is running in and enter the CLI Dojo, at the expense of having logs printed
+    - See [Dev mode guide](/guide/devmode.html)
+10. Loom size
+    - Your loom size is the maximum amount of memory your Urbit can use
+    - Urbit use a default 2GB loom -- you can increase it if necessary, but probably shouldn't unless you have a specific reason
+    - If your ship's loom exceeds the selected loom size, it will not boot successfully.
