@@ -6,7 +6,7 @@
 
     - If your device doesn't detect a network connection on boot, it will broadcast its own wifi network ("connect-to-connect"), which you can use to configure it to use your home wifi network.
 
-    - On your phone or computer, open your wifi settings and connect to the `NativePlanet_c2c` network using the password `nativeplanet`. Once connected, navigate to [http://nativeplanet.local](http://nativeplanet.local) (**not** `https`) in your browser. Use the web interface to connect your Native Planet device to your home wifi network. Once connected to your home network, the device will stop broadcasting the C2C network.
+    - On your phone or computer, open your wifi settings and connect to the `NativePlanetConnect` network using the password `nativeplanet`. Once connected, navigate to [http://nativeplanet.local](http://nativeplanet.local) (**not** `https`) in your browser. Use the web interface to connect your Native Planet device to your home wifi network. Once connected to your home network, the device will stop broadcasting the C2C network.
 
 - Once connected to the home network / internet, **give the device ~5 minutes to update** its software and restart. You will not be able to connect to the device until the update is complete. 
 
