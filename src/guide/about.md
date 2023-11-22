@@ -16,6 +16,6 @@ GroundSeg also includes automatic self-hosted S3, allowing you to host images an
 
 ![Cover image](/static/gs2/demo.gif)
 
-GroundSeg and StarTram contain many other features and conveniences. We encourage you to try it out and let us know what you think! We're always hanging around at `~nattyv/native-planet`.
+GroundSeg and StarTram contain many other features and conveniences. We encourage you to try it out and let us know what you think! We're always hanging around at `~nattyv/nativeplanet`.
 
 See you on the network!
